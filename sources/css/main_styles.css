@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+h1, h2, h3, h4, h5, h6, p, nav, section, footer
+{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body 
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #2f2f2f;
+
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.style_header
+{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Навигация */
+.navigation
+{
+    width: 100%;
+    height: 80px;
+    background: url("../images/navigation_background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+/* Контейнер навигации */
+.navigation_content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80%;
+    max-width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* Текстовый элемент навигации */
+.navigation_item
+{
+    display: inline-block;
+    color: #787878;
+
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: none;
+
+    margin-left: 102px;
+
+    transition: color 0.2s linear;
+
+    position: relative;
+    z-index: 1000;
+}
+
+/* Анимация для каждого текстового элемента навигации */
+/* Палочка при наведении */
+.navigation_item:after
+{
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    margin: 18px 0 0 0;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+/* Изменение цвета текста при наведении */
+.navigation_item:hover
+{
+    color: #ffffff;
+}
+
+/* Создание видимости палчоки при наведении */
+.navigation_item:hover:after
+{
+    display: block;
+}
+
+/* О Ваквелл Геймс */
+.about_vacvell
+{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/about_vacvell_background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+/* Контейнер о Ваквелл Геймс*/
+.about_vacvell_content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* Выравнивание элементов относительно контейнера о Ваквелл Геймс*/
+
+
+/* Заголовок о Ваквелл Геймс*/
+.about_vacvell_title
+{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+/* Подзаголовок о Ваквелл Геймс*/
+.about_vacvell_subtitle
+{
+    font-size: 42px;
+    font-weight: 500;
+    padding-top: 67px;
+    padding-left: 55px;
+
+    position: relative;
+}
+
+/* Палочка подзаголовка*/
+.about_vacvell_subtitle:before
+{
+    content: "";
+    display: block;
+    width: 42px;
+    height: 3px;
+
+    position: absolute;
+    left: 0;
+    top: 87px;
+    background-color: #2f2f2f;
+}
+
+/* Информация о Ваквелл Геймс*/
+.about_vacvell_info
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    padding-top: 105px;
+}
+
+
+/* Основное*/
+.style_main
+{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Контейнер OXYGEN-7 */
+.oxygen_7
+{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/oxygen_7_background.jpg") center no-repeat;
+    background-size: cover;
+    background-position: 0px;
+}
+
+.oxygen_7_content
+{
+    display: flex;
+    align-items: center;
+
+    width: 80%;
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    
+    color:#fff;
+}
+
+.oxygen_7_logo
+{
+    width: 100%;
+}
+
+/* Контейнер о OXYGEN-7 */
+.oxygen_7_about
+{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/oxygen_7_about_background.jpg") center no-repeat;
+    background-size: cover;
+    background-position: 0px;
+    
+}
+
+.oxygen_7_about_content
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    width: 80%;
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    
+    color:#fff;
+}
+
+.oxygen_7_about_title
+{
+    font-family: 'Mulish', 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 10px;
+    text-align: right;
+}
+
+.oxygen_7_about_subtitle
+{
+    font-size: 42px;
+    font-weight: 500;
+    text-align: right;
+    
+    line-height: 80px;
+    padding-top: 67px;
+
+    position: relative;
+}
+
+.oxygen_7_about_subtitle:before
+{
+    content: "";
+    display: block;
+    width: 42px;
+    height: 3px;
+
+    position: absolute;
+    top: 48%;
+    right: 100px;
+    left: -55px;
+    background-color: #fff;
+}
+
+.oxygen_7_about_info
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    padding-top: 105px;
+    text-align: right;
+}
+
+.oxygen_7_about_2
+{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/oxygen_7_about_2_background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.oxygen_7_about_2_content
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    width: 80%;
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    
+    color:#fff;
+}
+
+.oxygen_7_about_2_title
+{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.oxygen_7_about_2_info
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    padding-top: 80px;
+}
+
+.oxygen_7_about_2_info_bold
+{
+    font-weight: 600;
+}
+
+.oxygen_7_about_2_follow_us
+{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 80px;
+    padding-top: 100px;
+}
+
+.oxygen_7_about_2_link
+{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 206px;
+    margin-top: 97px;
+    padding-top: 12px;
+    padding-left: 14%;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    height: 64px;
+    width: 400px;
+    
+    font-weight: 700;
+    font-size: 18px;
+    color: #2f2f2f;
+    letter-spacing: 0.5px;
+
+    background-color: #fff;
+
+    transition: all 0.2s linear;
+
+}
+
+.oxygen_7_about_2_link:hover
+{
+    color: #fff;
+    background-color: #2f2f2f;
+}
+
+.oxygen_7_about_2_link_facebook
+{
+    position: relative;
+}
+
+.oxygen_7_about_2_link_vk
+{
+    position: relative;
+}
+
+.oxygen_7_about_2_links
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.facebook_logo
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.vk_logo
+{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.contacts_vacvell
+{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/contacts_vacvell_background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.contact_vacvell_logo
+{
+    width: 50%;
+}
+
+.contacts_vacvell_content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80%;
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    
+    color:#2f2f2f;
+}
+
+.contacts_vacvell_title
+{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.contacts_vacvell_link
+{
+    display: block;
+    text-decoration: none;
+    
+    padding-top: 12px;
+    padding-left: 20%;
+    
+    margin-top: 85px;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    height: 64px;
+    width: 100%;
+    
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.5px;
+
+    background-color: #2f2f2f;
+
+    transition: all 0.2s linear;
+}
+
+.contacts_vacvell_link:hover
+{
+    color: #2f2f2f;
+    background-color: #e1e1e1;
+}
+
+
+.contacts_vacvell_links
+{
+    position: relative;
+}
+
+.contacts_vacvell_facebook_logo
+{
+    position: absolute;
+    left: 10px;
+    top: 159px
+}
+
+.contacts_vacvell_vk_logo
+{
+    position: absolute;
+    left: 10px;
+    top: 308px
+}
+
+.contacts_vacvell_gmail_logo
+{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.contacts_vacvell_twitter_logo
+{
+    position: absolute;
+    left: 10px
+}
+
+
+.footer
+{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 50vh;
+    background: url("../images/footer_background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.footer_content
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+    color:#fff;
+}
+
+.footer_info
+{
+    font-weight: 550;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footer_first_info_part
+{
+    padding-top: 38px;
+    line-height: 25px;
+}
+
+.footer_two_info_part
+{
+    padding-top: 46px;
+}
+
+.footer_info_gray_part
+{
+    color: #acacac;
+}
+
+.footer_content_pages_title
+{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer_content_pages_items
+{
+    display: block;
+    text-decoration: none;
+    
+    font-size: 14px;
+    font-weight: 500;
+    
+    color: #fff;
+}
+
+.footer_content_pages_items:hover
+{
+    color: #acacac;
+}
+
+.footer_content_partners_title
+{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer_content_partners_revbyte_logo
+{
+    padding-top: 30px;
+}
