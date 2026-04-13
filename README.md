@@ -4,7 +4,7 @@ My first HTML and CSS project — a practice page built while learning the basic
 
 ## 🔗 Demo
 
-> [View live page](https://maintainerex.github.io/vacvell-games/) *(replace with your GitHub Pages link)*
+> [View live page](https://maintainerex.github.io/vacvell-games/)
 
 ## 👤 Author
 
